@@ -31,17 +31,21 @@
             }
         }
 
-        /* Parallax scrolling effect */
-        .parallax-section {
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-        }
+        .parallax {
+     /* The image used */
+     background-image: url('assets/photo-1541140134513-85a161dc4a00.jpg');
+
+     /* Full height */
+     height: 50%; 
+
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+    }
         
-        .parallax-layer {
-            transform: translateZ(-1px) scale(2);
-        }
 
         /* Navigation bar styles */
         .navbar {
@@ -68,7 +72,7 @@
         }
     </style>
 </head>
-<body class="w3-grey">
+
 
 <!-- Navigation Bar -->
 
@@ -83,26 +87,35 @@
 <!-- ... rest of your code ... -->
 
 <!-- Header/Home with Parallax Scrolling -->
-<header class="w3-container w3-padding-32 w3-center parallax-section" id="home" style="background-image: url('C:\Users\aaron\OneDrive\Desktop\My Portfolio\IMG_20230426_153952_087.jpg');">
-   
+<header class=" w3-padding-64 w3-center w3-black parallax" id="home" style="background-image: url('assets/photo-1541140134513-85a161dc4a00.jpg');">
+  
         <h1 class="w3-jumbo"><span class="w3-hide-small">Hi, </span>I'm Adrian </h1>
         <p>( College Student )</p>
         <p> Web Designer</p>
-        <img src="portfolio\IMG_20230426_153952_087.jpg" alt="boy" class="w3-image" width="500" height="250">
+        <img src="assets/IMG_20230426_153952_087.jpg" alt="boy" class="w3-image" width="500" height="250">
      
 </header>
 
 <!-- About Section -->
-<div class="w3-content w3-justify w3-text-black w3-padding-64 parallax-section" id="about" style="background-image: url('C:\Users\aaron\OneDrive\Desktop\My Portfolio\background-image.jpg');">
-  
+<div class="w3-padding-64 w3-content w3-text-black" id="about"></div>
+ 
     <h2 class="w3-text-black">Adrian Signo</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <hr style="width:400px" class="w3-opacity">
     <p>I'm Adrian Signo, a web developer who is in my third year of college. I want to demonstrate my abilities, experience, and creative work in a captivating and engaging way through this portfolio. I have a tremendous enthusiasm for web development, and I have dedicated myself to mastering my craft and going beyond the boundaries of what is supposed to be possible. Thanks to my experience working on certain projects in my school, I have been able to learn a lot about web design.</p>
     <p>I value teamwork and effective communication in addition to my technical expertise. I truly believe in the benefits of teamwork, carefully listening to my clients' and lecturers' requests, and adapting my techniques to meet those needs. By building strong relationships and maintaining open lines of communication, I attempt to produce great results that beyond expectations.</p>
     <p>Please spend some time browsing my portfolio.</p>
    
+    <h2 class="w3-text-black">My Skills</h2>
+    <hr style="width:300px" class="w3-opacity">
+    <p>Here are some of my skills:</p>
     
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+    <ul class="skills-list" style="list-style-type: none; padding: 0;">
+        <li style="margin-bottom: 10px;">HTML/CSS</li>
+        <li style="margin-bottom: 10px;">Back-end basics</li>
+        <!-- Add more skills here -->
+    </ul>
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-black">
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">2</span><br>
         Partners
@@ -122,70 +135,52 @@
   </div>
 </div>
 
-<!-- My Skills Section -->
-<div class="w3-content w3-justify w3-text-black w3-padding-64 parallax-section" id="skills" style="background-image: url('C:\Users\aaron\OneDrive\Desktop\My Portfolio\background-image.jpg');">
-    <h2 class="w3-text-black">My Skills</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Here are some of my skills:</p>
-    <ul class="skills-list" style="list-style-type: none; padding: 0;">
-        <li style="margin-bottom: 10px;">HTML/CSS</li>
-        <li style="margin-bottom: 10px;">Back-end basics</li>
-        <!-- Add more skills here -->
-    </ul>
+
+
+
 </div>
 
-   
-<!-- Projects section -->
-</div>
-</section>
 
 <!-- Projects Section -->
-<div class="w3-padding-64 w3-content parallax-section" id="projects" style="background-image: url('C:\Users\aaron\OneDrive\Desktop\My Portfolio\background-image.jpg');">
+<div class="w3-padding-64 w3-content w3-text-black" id="projects"></div> 
   
+    
     <h2 class="w3-text-black">My projects</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <hr style="width:400px" class="w3-opacity">
 
     
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-center">
-        <img src="portfolio\received_1332261337531989.webp" style="width:100%">
+        <img src="assets/received_1332261337531989.webp" style="width: 60%">
       </div>
 
   </div>
 
 </div>
 
+ 
  <!-- Contact Section -->
- <div class="w3-padding-64 w3-content w3-text-black" id="contact">
+<div class="w3-padding-64 w3-content w3-text-black" id="contact">
     <h2 class="w3-text-black">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
-
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Dagupan City</p>
-      <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Phone: 09294967308</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: adriansigno06@gmail.com</p>
+       <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Dagupan City</p>
+       <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Phone: 09294967308</p>
+       <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: adriansigno06@gmail.com</p>
     </div><br>
-   
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Social Media Links</title>
-    </head>
-    <body>
-        <p>Follow me on social media:</p>
-        <ul>
-            <li><a href="https://www.facebook.com/profile.php?id=100004499147855&mibextid=ZbWKwL"_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/ria0_o/?hl=en"_blank">Instagram</a></li>
-        </ul>
-    </body>
-    </html>
+    <div class="w3-section">
+       <!-- Replace the placeholders with your actual links -->
+       <p>Follow me on social media:</p>
+       <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=100004499147855&mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+        
+       </ul>
+    </div>
+ </div>
+ 
+
+<div class="w3-content w3-padding-64 w3-text-black w3-xlarge parallax-section">
     
-   
-  <!-- End Contact Section -->
-  </div>
-  
-
-
 <footer class="w3-content w3-padding-64 w3-text-black w3-xlarge">
 <p class="w3-center">THANK YOU FOR VISITING MY PORTFOLIO</p>
  
